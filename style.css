@@ -1,0 +1,287 @@
+* {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family: 'Segoe UI', sans-serif; background:#272636; color:#333;}
+    a {text-decoration:none; color:inherit;}
+    
+
+  
+    
+    /* Navigation bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: hsl(64, 43%, 46%);   
+    padding: 10px 40px;
+
+    position: fixed;         
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  
+  /* Logo container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;  
+  }
+
+  .menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  /* Logo image */
+  .logo-img {
+    width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;   
+  border: 2px solid white;  
+  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    
+  }
+  
+  /* Logo text */
+  .logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  nav ul li.auth a {
+    padding: 6px 14px;
+    border: 1px solid white;
+    border-radius: 6px;
+  }
+  
+  nav ul li.auth a:hover {
+    background: white;
+    color: #218c94;}
+
+    .menu-toggle {
+      display: block;
+    }
+  
+
+    
+    .hero {background:linear-gradient(to right, #d2daca, #456620); color:white; padding:4rem 2rem; text-align:center;}
+    .hero h1 {font-size:3rem; margin-bottom:1rem;}
+    .hero p {font-size:1.2rem; margin-bottom:2rem;}
+    .hero button {background:#0e737a; border:none; padding:0.8rem 1.5rem; border-radius:8px; cursor:pointer; font-weight:bold; color: white;}
+    .hero button:hover {background:#d4ac0d;}
+
+    
+    .search-bar {text-align:center; margin:2rem;}
+    .search-bar input {width:50%; padding:0.8rem; border:1px solid #ccc; border-radius:8px;}
+    .search-bar button {padding:0.8rem 1.2rem; background:#0e737a; color:white; border:none; border-radius:8px; margin-left:0.5rem; cursor:pointer;}
+    .search-bar button:hover {background:#d4ac0d;}
+
+    
+    .ads {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1.5rem; padding:2rem;}
+    .ad-card {background:white; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); overflow:hidden;}
+    .ad-card img {width:100%; height:180px; object-fit:cover;}
+    .ad-card h3 {padding:1rem;}
+    .ad-card p {padding:0 1rem 1rem; font-size:0.9rem; color:#555;}
+
+    
+    .ngo-section {padding:2rem;}
+    .ngo-section h2 {text-align:center; margin-bottom:1.5rem; color:#2c3e50;}
+    .book-grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1.5rem;}
+    .book-card {background:white; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.1); padding:1rem; text-align:center; transition:0.3s;}
+    .book-card:hover {transform:translateY(-5px);}
+    .book-card img {width:100px; height:150px; object-fit:cover; margin-bottom:0.8rem;}
+    .book-card h4 {margin:0.5rem 0;}
+    .book-card p {color:#010808; font-weight:bold;}
+    .book-card button {margin:0.3rem; padding:0.5rem 1rem; border:none; border-radius:6px; cursor:pointer;}
+    .buy-btn {background:#218c94; color:white;}
+    .cart-btn {background:#2c3e50; color:white;}
+    .buy-btn:hover {background:#d4ac0d;}
+    .cart-btn:hover {background:#d4ac0d;}
+
+
+    /*LOGIN SIGNUP*/
+    .modal {
+      display: none;
+      position: right;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 50%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background: #fff;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 12px;
+      width: 250px;
+      text-align: center;
+      position: relative;
+    }
+
+    /* Close Button */
+    .close {
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      font-size: 22px;
+      cursor: pointer;
+      color: #444;
+    }
+
+    .modal-content input {
+      width: 50%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .modal-content button {
+      width: 55%;
+      padding: 10px;
+      background: #456620;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .modal-content button:hover {
+      background: #0056b3;
+    }
+  
+
+
+    /* 📚 Book Exchange Section */
+.exchange-section {
+    padding: 2rem;
+    background: #f4f9f9;
+    border-top: 4px solid #0e737a;
+  }
+  
+  .exchange-section h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+  }
+  
+  .exchange-intro {
+    text-align: center;
+    color: #555;
+    margin-bottom: 2rem;
+  }
+  
+  .exchange-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .exchange-form label {
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .exchange-form input,
+  .exchange-form select {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .exchange-form button {
+    padding: 0.8rem;
+    background: #0e737a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .exchange-form button:hover {
+    background: #d4ac0d;
+  }
+  
+
+    
+    .cart-section {padding:2rem; background:#ecf0f1;}
+    .cart-section h2 {text-align:center; margin-bottom:1rem;}
+    #cartList {list-style:none; max-width:600px; margin:auto;}
+    #cartList li {background:white; margin:0.5rem 0; padding:1rem; border-radius:8px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    #cartList button {background:#e74c3c; color:white; border:none; padding:0.3rem 0.8rem; border-radius:6px; cursor:pointer;}
+    #cartList button:hover {background:#c0392b;}
+
+    
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      background:hsl(64, 43%, 46%) ;
+      color: white;
+    }
+    
+  
+    
+    .social-icons a {
+      font-size: 22px;
+      transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+      color: #d4ac0d;
+    }
+    
+   
+  
+
+    /* No underline by default */
+footer a {
+  text-decoration: none;
+}
+
+/* Underline only on hover */
+footer a:hover {
+  text-decoration: underline;
+  color:#d4ac0d
+}
+
+    
+  
+    
